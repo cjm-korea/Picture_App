@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:importantForAutofill="no"
             android:inputType="numberDecimal"
-            android:text=""
+            android:text="1"
             android:textAlignment="center" />
 
         <LinearLayout
