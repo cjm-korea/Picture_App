@@ -49,11 +49,9 @@ public class MainActivity extends AppCompatActivity {
         bitmap = (BitmapDrawable) res.getDrawable(IMGS.get(0));
         now_img = 1;
         editText.setText(Integer.toString(now_img));
-        int bitmapWidth = bitmap.getIntrinsicWidth();
-        int bitmapHeight = bitmap.getIntrinsicHeight();
         imageView.setImageDrawable(bitmap);
-        imageView.getLayoutParams().width = bitmapWidth;
-        imageView.getLayoutParams().height = bitmapHeight;
+        imageView.getLayoutParams().width = bitmap.getIntrinsicWidth();
+        imageView.getLayoutParams().height = bitmap.getIntrinsicHeight();
         // endregion
 
         // region Button Function
@@ -76,43 +74,35 @@ public class MainActivity extends AppCompatActivity {
                             now_img = 1;
                             editText.setText(Integer.toString(now_img));
                             bitmap = (BitmapDrawable) res.getDrawable(IMGS.get(now_img-1));
-                            int bitmapWidth = bitmap.getIntrinsicWidth();
-                            int bitmapHeight = bitmap.getIntrinsicHeight();
                             imageView.setImageDrawable(bitmap);
-                            imageView.getLayoutParams().width = bitmapWidth;
-                            imageView.getLayoutParams().height = bitmapHeight;
+                            imageView.getLayoutParams().width = bitmap.getIntrinsicWidth();
+                            imageView.getLayoutParams().height = bitmap.getIntrinsicHeight();
                             imageView.setImageDrawable(bitmap);
                         }else  if(text < 1){
                             Toast.makeText(MainActivity.this, "사진은 1~30까지만 있습니다.", Toast.LENGTH_SHORT).show();
                             now_img = 1;
                             editText.setText(Integer.toString(now_img));
                             bitmap = (BitmapDrawable) res.getDrawable(IMGS.get(now_img-1));
-                            int bitmapWidth = bitmap.getIntrinsicWidth();
-                            int bitmapHeight = bitmap.getIntrinsicHeight();
                             imageView.setImageDrawable(bitmap);
-                            imageView.getLayoutParams().width = bitmapWidth;
-                            imageView.getLayoutParams().height = bitmapHeight;
+                            imageView.getLayoutParams().width = bitmap.getIntrinsicWidth();
+                            imageView.getLayoutParams().height = bitmap.getIntrinsicHeight();
                             imageView.setImageDrawable(bitmap);
                         }else if(text >30){
                             Toast.makeText(MainActivity.this, "사진은 1~30까지만 있습니다.", Toast.LENGTH_SHORT).show();
                             now_img = 30;
                             editText.setText(Integer.toString(now_img));
                             bitmap = (BitmapDrawable) res.getDrawable(IMGS.get(now_img-1));
-                            int bitmapWidth = bitmap.getIntrinsicWidth();
-                            int bitmapHeight = bitmap.getIntrinsicHeight();
                             imageView.setImageDrawable(bitmap);
-                            imageView.getLayoutParams().width = bitmapWidth;
-                            imageView.getLayoutParams().height = bitmapHeight;
+                            imageView.getLayoutParams().width = bitmap.getIntrinsicWidth();
+                            imageView.getLayoutParams().height = bitmap.getIntrinsicHeight();
                             imageView.setImageDrawable(bitmap);
                         }else {
                             now_img = text;
                             editText.setText(Integer.toString(now_img));
                             bitmap = (BitmapDrawable) res.getDrawable(IMGS.get(now_img-1));
-                            int bitmapWidth = bitmap.getIntrinsicWidth();
-                            int bitmapHeight = bitmap.getIntrinsicHeight();
                             imageView.setImageDrawable(bitmap);
-                            imageView.getLayoutParams().width = bitmapWidth;
-                            imageView.getLayoutParams().height = bitmapHeight;
+                            imageView.getLayoutParams().width = bitmap.getIntrinsicWidth();
+                            imageView.getLayoutParams().height = bitmap.getIntrinsicHeight();
                             imageView.setImageDrawable(bitmap);
                         }
 
@@ -138,11 +128,9 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     now_img--;
                     bitmap = (BitmapDrawable) res.getDrawable(IMGS.get(now_img - 1));
-                    int bitmapWidth = bitmap.getIntrinsicWidth();
-                    int bitmapHeight = bitmap.getIntrinsicHeight();
                     imageView.setImageDrawable(bitmap);
-                    imageView.getLayoutParams().width = bitmapWidth;
-                    imageView.getLayoutParams().height = bitmapHeight;
+                    imageView.getLayoutParams().width = bitmap.getIntrinsicWidth();
+                    imageView.getLayoutParams().height = bitmap.getIntrinsicHeight();
                     imageView.setImageDrawable(bitmap);
                     editText.setText(Integer.toString(now_img));
                 }
@@ -157,11 +145,9 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     now_img++;
                     bitmap = (BitmapDrawable) res.getDrawable(IMGS.get(now_img - 1));
-                    int bitmapWidth = bitmap.getIntrinsicWidth();
-                    int bitmapHeight = bitmap.getIntrinsicHeight();
                     imageView.setImageDrawable(bitmap);
-                    imageView.getLayoutParams().width = bitmapWidth;
-                    imageView.getLayoutParams().height = bitmapHeight;
+                    imageView.getLayoutParams().width = bitmap.getIntrinsicWidth();
+                    imageView.getLayoutParams().height = bitmap.getIntrinsicHeight();
                     imageView.setImageDrawable(bitmap);
                     editText.setText(Integer.toString(now_img));
                 }
@@ -170,4 +156,6 @@ public class MainActivity extends AppCompatActivity {
         // endregion
 
     }
+
+
 }
