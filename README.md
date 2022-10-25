@@ -12,6 +12,6 @@ bottom LinearLayout set gravity bottom for always in bottom
 Splash Page for make feel modern theme
 
 ### REALIZATION
-Restrict components with Guideline
-Set gravity for component always in there
-Make Splash Page with blanck activity(hide action bar, handler.postDelayed, Intent) 
+Restrict components with Guideline  
+Set gravity for component always in there  
+Make Splash Page with blanck activity(hide action bar, handler.postDelayed, Intent)
