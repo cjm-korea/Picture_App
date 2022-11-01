@@ -14,4 +14,4 @@ Splash Page for make feel modern theme
 ### REALIZATION
 Restrict components with Guideline  
 Set gravity for component always in there  
-Make Splash Page with blanck activity(hide action bar, handler.postDelayed, Intent)
+Make Splash Page with blank activity(hide action bar, handler.postDelayed, Intent)
